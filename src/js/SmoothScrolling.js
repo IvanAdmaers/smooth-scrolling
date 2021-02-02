@@ -12,7 +12,8 @@ class SmoothScrolling {
     document.documentElement.style.cssText = `
       width: 100%;
       height: ${this.totalHeight}px;
-      overflow: scroll;
+      overflow-x: hidden;
+      overflow-y: scroll;
     `;
 
     document.body.style.cssText = `
